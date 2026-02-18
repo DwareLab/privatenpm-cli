@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/growthnodes/privatenpm.git"
+    "url": "git+https://github.com/DwareLab/privatenpm-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/growthnodes/privatenpm/issues"
+    "url": "https://github.com/DwareLab/privatenpm-cli/issues"
   },
-  "homepage": "https://github.com/growthnodes/privatenpm#readme",
+  "homepage": "https://github.com/DwareLab/privatenpm-cli#readme",
   "engines": {
     "node": ">=18.0.0"
   },
