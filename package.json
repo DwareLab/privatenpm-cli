@@ -1,0 +1,45 @@
+{
+  "name": "privatenpm",
+  "version": "1.0.0",
+  "description": "CLI for managing packages on your private npm registry",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "privatenpm": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "npm",
+    "registry",
+    "private",
+    "cli",
+    "package-manager"
+  ],
+  "author": "GrowthNodes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growthnodes/privatenpm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/growthnodes/privatenpm/issues"
+  },
+  "homepage": "https://github.com/growthnodes/privatenpm#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/**/*"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "node-fetch": "^3.3.2",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2",
+    "semver": "^7.5.4",
+    "tar": "^6.2.0"
+  }
+}
