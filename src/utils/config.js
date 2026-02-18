@@ -64,3 +64,18 @@ export async function clearConfig() {
     token: null
   }, null, 2));
 }
+
+export async function readPackageJson() {
+  try {
+    const pkgPath = path.join(process.cwd(), 'package.json');
+    const data = await fs.readFile(pkgPath, 'utf-8');
+    return JSON.parse(data);
+  } catch (error) {
+    return null;
+  }
+}
+
+export async function writePackageJson(pkg) {
+  const pkgPath = path.join(process.cwd(), 'package.json');
+  await fs.writeFile(pkgPath, JSON.stringify(pkg, null, 2));
+}
